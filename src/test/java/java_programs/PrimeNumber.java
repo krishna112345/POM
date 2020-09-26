@@ -10,5 +10,25 @@ public class PrimeNumber {
 		System.out.println(x+y);
 	
 	}
+	
+	public void checkPrimeNumber() {
+		
+		int n=9;
+		int count=0;
+		for (int i = 1; i <=9; i++) {
+			if (n/i==0) {
+				count++;
+				
+			}
+		}
+		if (count<2) {
+			
+			System.out.println("prime");
+			
+		}else {
+			System.out.println("not prime");
+		}
+		
+	}
 
 }
