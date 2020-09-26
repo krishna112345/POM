@@ -87,7 +87,7 @@ public class GenericLibrary {
 		
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File file=ts.getScreenshotAs(OutputType.FILE);
-		String path="G:\\Automation\\AppiumTest\\Reports\\Screenshots\\"+testName+ new Random().nextInt()+".png";
+		String path=System.getProperty("user.dir")+"\\Reports\\Screenshots\\"+testName+ new Random().nextInt()+".png";
 		
 		FileUtils.copyFile(file, new File(path));
 		return path;
