@@ -44,7 +44,7 @@ public class LoginPageTest extends TestBaseClass {
 	ExtentReports extent;
 	SoftAssert assertion;
 	ExtentTest logger;
-	HashMap<String, String> testData;
+	HashMap<String, String> testDataa;
 	
 	
 

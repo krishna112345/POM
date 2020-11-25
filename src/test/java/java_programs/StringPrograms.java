@@ -1,7 +1,5 @@
 package java_programs;
 
-import org.apache.commons.collections.comparators.ReverseComparator;
-
 public class StringPrograms {
 
 	public static void main(String[] args) {
