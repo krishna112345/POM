@@ -5,7 +5,7 @@
  <parameter name="browser" value="chrome"></parameter>
     <classes>
     
-      <class name="com.org.orageHrm.test.LoginPageTest"/>
+      <class name="java_programs.TamCat"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
