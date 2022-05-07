@@ -71,11 +71,12 @@ public class LoginPageTest extends TestBaseClass {
 			assertion=new SoftAssert();
 			
 			loginPage=new LoginPage(driver, logger);
-			loginPage.loginToApp(testData.get("username"), testData.get("password"));
+			boolean flag=loginPage.loginToApp(testData.get("username"), testData.get("password"))
+					 			  .verifyHomePage();
 			
-
-			homePage=new HomePage(driver, logger);
-			boolean flag=homePage.verifyHomePage();
+//
+//			homePage=new HomePage(driver, logger);
+//			boolean flag=homePage.verifyHomePage();
 			assertion.assertEquals(true,flag );
 			
 			commonPage=new CommonPage(driver, logger);
@@ -126,3 +127,4 @@ public class LoginPageTest extends TestBaseClass {
 	
 
 }
+ 
